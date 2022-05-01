@@ -1,6 +1,26 @@
+@import 'fonts';
+@import 'colors';
+
 footer {
-    p {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $lightpurple;
+    font-family: $body;
+    text-transform: uppercase;
+    height: 45px;
+    border-top: 1px solid $darkpurple;
+    ul {
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        list-style: none;
+        margin: 0;
+        padding: 3px 0 0;
+        li {
+            color: $darkpurple;
+            font-size: 1.2rem;
+        }
     }
 }

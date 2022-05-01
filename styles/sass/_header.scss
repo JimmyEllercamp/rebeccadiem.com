@@ -1,100 +1,65 @@
+@import 'fonts';
+@import 'colors';
+
 header {
+    display: flex;
+    background-color: $lightpurple;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    font-family: $body;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-bottom: 1px solid $darkpurple;
+    padding-top: 5px;
+    h3 {
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        padding-left: 125px;
+        letter-spacing: 1px;
+        a {
+            text-decoration: none;
+            color: $darkpurple;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    h3::before {
+        content: '';
+        background-image: url('../../assets/RebeccaDiem_Logo\ \(1\).png');
+        display: block;
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        background-position: center;
+        left: 75px;
+        top: 0;
+    }
     nav {
-        background-color:hotpink;
-        text-transform: uppercase;
-        height: 8vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 50%;
         ul {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
+            list-style: none;
+            padding: 0;
+            .hiddenHomeButton {
+                display: none;
+            }
             li {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                list-style: none;
-                margin: 5px 15px;
-                transition: all 0.3s;
-                position: relative;
-                height: 8vh;
-                width: 25%;
-                z-index: 10;
+                margin: 0;
+                letter-spacing: 1px;
                 a {
                     text-decoration: none;
-                    color: white;
-                    transition: all 0.3s;
-                    font-size: 1.2rem;
-                    font-weight: 600;
+                    color: $darkpurple;
                 }
-            }
-
-            li::before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background-color: white;
-                z-index: -10;
-                transform: scale(0);
-                transition: all 0.3s;
-            }
-
-            li::after {
-                content: '';
-                position: absolute;
-                height: 60%;
-                width: 50%;
-                border-bottom: 2px solid hotpink;
-                // border-top: 1px solid hotpink;
-                transform: translateX(75%);
-                opacity: 0;
-                transition: all 0.5s ease-in-out;
-                z-index: -1;
-            }
-
-            li:hover > a {
-                color: hotpink;
-            }
-
-            li:hover::before {
-                transform: scale(1);
-            }
-            li:hover::after {
-                transform: translateX(0);
-                opacity: 1;
+                a:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
-
-    .banner {
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        margin-bottom: 30px;
-            h1 {
-                color: hotpink;
-                text-transform: uppercase;
-                font-size: 4.5rem;
-                font-family: 'Roboto Mono', monospace;                
-                text-shadow: -4px -4px 0 white;
-                transition: all 0.3s;
-                .diem {
-                    position: relative;
-                    top: 80px;
-                    right: 60px;
-                }
-            }
-            h1:hover {
-                color: white;
-                text-shadow: -8px -8px 0 hotpink;
-            }
-        
-    }
-    
 }
