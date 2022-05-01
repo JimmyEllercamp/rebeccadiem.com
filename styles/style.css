@@ -523,12 +523,18 @@ footer ul li a:hover {
   color: white;
 }
 
+.writing-page h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  text-align: center;
+  padding: 0;
+}
 .writing-page h2 {
   font-family: "Satisfy", serif;
   font-size: 3rem;
   color: #BFABC9;
   text-align: center;
-  margin: 8% 0;
 }
 .writing-page h3 {
   font-family: "Barlow Condensed", sans-serif;
@@ -536,7 +542,7 @@ footer ul li a:hover {
   text-align: center;
   font-size: 1.5rem;
 }
-.writing-page .books {
+.writing-page .books .book-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,4 +551,86 @@ footer ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.writing-page .books .book-list div {
+  width: 17.5%;
+}
+.writing-page .books .book-list div img {
+  max-width: 100%;
+}
+.writing-page .books .buy {
+  border-bottom: 1px solid black;
+}
+.writing-page .books .buy h3 {
+  font-family: "Barlow", sans-serif;
+  margin-top: 5%;
+}
+.writing-page .books .buy ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 5% 0;
+  padding: 0;
+}
+.writing-page .books .buy ul li {
+  padding: 0 5%;
+  width: 300px;
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.writing-page .books .buy ul li a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.writing-page .books .buy ul li a:hover {
+  color: #BFABC9;
+}
+.writing-page .articles,
+.writing-page .poetry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 80%;
+  margin: 0 auto;
+}
+.writing-page .articles ul,
+.writing-page .poetry ul {
+  padding-left: 10%;
+}
+.writing-page .articles ul li,
+.writing-page .poetry ul li {
+  font-family: "Rasa", serif;
+  font-size: 1.25rem;
+}
+.writing-page .articles ul li a,
+.writing-page .poetry ul li a {
+  text-decoration: none;
+  color: black;
+}
+.writing-page .poetry {
+  margin-bottom: 5%;
 }

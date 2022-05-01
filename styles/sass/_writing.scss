@@ -2,12 +2,19 @@
 @import 'colors';
 
 .writing-page {
+    h1 {
+        font-family: $button;
+        text-transform: uppercase;
+        font-size: 5.5rem;
+        text-align: center;
+        // margin: 0;
+        padding: 0;
+    }
     h2 {
         font-family: $satisfy;
         font-size: 3rem;
         color: $lightpurple;
         text-align: center;
-        margin: 8% 0;
     }
     h3 {
         font-family: $button;
@@ -16,8 +23,74 @@
         font-size: 1.5rem;
     }
     .books {
+        .book-list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            div {
+                width: calc(70% / 4);
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+        .buy {
+            h3 {
+                font-family: $heading;
+                margin-top: 5%;
+            }
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                margin: 5% 0;
+                padding: 0;
+                li {
+                    padding: 0 5%;
+                    width: 300px;
+                    text-align: center;
+                    font-family: $button;
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    transition: all 0.2s ease-in-out;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    a:hover {
+                        color: $lightpurple;
+                    }
+                }
+            }
+            border-bottom: 1px solid black;
+        }
+    }
+
+
+    .articles,
+    .poetry {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        width: 80%;
+        margin: 0 auto;
+        ul {
+           padding-left: 10%;
+           li {
+               font-family: $body;
+               font-size: 1.25rem;
+               a {
+                   text-decoration: none;
+                   color: black;
+               }
+           }
+        }
+    }
+    .poetry {
+        margin-bottom: 5%;
     }
 }
