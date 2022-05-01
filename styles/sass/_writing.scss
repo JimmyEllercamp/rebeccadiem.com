@@ -1,0 +1,23 @@
+@import 'fonts';
+@import 'colors';
+
+.writing-page {
+    h2 {
+        font-family: $satisfy;
+        font-size: 3rem;
+        color: $lightpurple;
+        text-align: center;
+        margin: 8% 0;
+    }
+    h3 {
+        font-family: $button;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .books {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

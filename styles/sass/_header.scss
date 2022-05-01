@@ -10,7 +10,6 @@ header {
     font-family: $body;
     text-transform: uppercase;
     font-size: 1.2rem;
-    border-bottom: 1px solid $darkpurple;
     padding-top: 5px;
     h3 {
         margin: 0;
@@ -18,12 +17,15 @@ header {
         width: 50%;
         padding-left: 125px;
         letter-spacing: 1px;
+        transition: all 0.2s;
+        position: relative;
         a {
             text-decoration: none;
             color: $darkpurple;
+            transition: all 0.2s;
         }
         a:hover {
-            text-decoration: underline;
+            color: white;
         }
     }
     h3::before {
@@ -37,8 +39,9 @@ header {
         position: absolute;
         background-position: center;
         left: 75px;
-        top: 0;
+        top: -8px;
     }
+
     nav {
         width: 50%;
         ul {
@@ -55,9 +58,10 @@ header {
                 a {
                     text-decoration: none;
                     color: $darkpurple;
+                    transition: all 0.2s ease-in-out;
                 }
                 a:hover {
-                    text-decoration: underline;
+                    color: white;
                 }
             }
         }

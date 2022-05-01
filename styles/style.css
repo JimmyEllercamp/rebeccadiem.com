@@ -260,7 +260,6 @@ header {
   font-family: "Rasa", serif;
   text-transform: uppercase;
   font-size: 1.2rem;
-  border-bottom: 1px solid #65526E;
   padding-top: 5px;
 }
 header h3 {
@@ -269,13 +268,18 @@ header h3 {
   width: 50%;
   padding-left: 125px;
   letter-spacing: 1px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
 }
 header h3 a {
   text-decoration: none;
   color: #65526E;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 header h3 a:hover {
-  text-decoration: underline;
+  color: white;
 }
 header h3::before {
   content: "";
@@ -288,7 +292,7 @@ header h3::before {
   position: absolute;
   background-position: center;
   left: 75px;
-  top: 0;
+  top: -8px;
 }
 header nav {
   width: 50%;
@@ -313,9 +317,11 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #65526E;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 header nav ul li a:hover {
-  text-decoration: underline;
+  color: white;
 }
 
 .landing {
@@ -358,16 +364,16 @@ header nav ul li a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 40vh;
-  margin-bottom: 5%;
+  margin-bottom: 7%;
 }
 .featured h2 {
   text-align: center;
   font-family: "Satisfy", serif;
-  font-size: 3rem;
   font-weight: 400;
   font-size: 3rem;
   color: #BFABC9;
+  margin-top: 0;
+  padding-top: 0;
 }
 .featured .features {
   display: -webkit-box;
@@ -379,13 +385,69 @@ header nav ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
-.featured .features div {
-  border: 1px solid black;
-  padding: 50px;
+.featured .features .feature1,
+.featured .features .feature2,
+.featured .features .feature3 {
+  width: calc(33.3333333333% - 10px);
+  position: relative;
+}
+.featured .features .feature1 img,
+.featured .features .feature2 img,
+.featured .features .feature3 img {
+  max-width: 100%;
+}
+.featured .features .description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.featured .features .description h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.featured .features .description h3 a {
+  text-decoration: none;
+  color: #FFF;
+}
+.featured .features .description h3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.featured .features .description p {
+  font-family: "Rasa", serif;
+  font-size: 1.25rem;
+  width: 80%;
 }
 .featured .see-more {
   text-align: center;
+}
+.featured .see-more h3 {
+  margin: 0;
+  padding: 0;
 }
 .featured .see-more span {
   border: 1px solid black;
@@ -432,8 +494,10 @@ footer {
   background-color: #BFABC9;
   font-family: "Rasa", serif;
   text-transform: uppercase;
-  height: 45px;
-  border-top: 1px solid #65526E;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 footer ul {
   width: 100%;
@@ -444,9 +508,41 @@ footer ul {
       justify-content: space-around;
   list-style: none;
   margin: 0;
-  padding: 3px 0 0;
+  padding: 7px 0 0 0;
 }
 footer ul li {
+  font-size: 1.5rem;
+}
+footer ul li a {
   color: #65526E;
-  font-size: 1.2rem;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+footer ul li a:hover {
+  color: white;
+}
+
+.writing-page h2 {
+  font-family: "Satisfy", serif;
+  font-size: 3rem;
+  color: #BFABC9;
+  text-align: center;
+  margin: 8% 0;
+}
+.writing-page h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.writing-page .books {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

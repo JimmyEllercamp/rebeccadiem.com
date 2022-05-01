@@ -9,18 +9,28 @@ footer {
     background-color: $lightpurple;
     font-family: $body;
     text-transform: uppercase;
-    height: 45px;
-    border-top: 1px solid $darkpurple;
+    // height: 45px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     ul {
         width: 100%;
         display: flex;
         justify-content: space-around;
         list-style: none;
         margin: 0;
-        padding: 3px 0 0;
+        padding: 7px 0 0 0;
         li {
-            color: $darkpurple;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
+            a {
+                color: $darkpurple;
+                text-decoration: none;
+                transition: all 0.2s ease-in-out;
+            }
+            a:hover {
+                color: white;
+            }
         }
     }
 }
