@@ -245,26 +245,304 @@ html {
   margin: 0 auto;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #BFABC9;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 46px;
+  font-family: "Rasa", serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-top: 5px;
+}
+header h3 {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  padding-left: 125px;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+}
+header h3 a {
+  text-decoration: none;
+  color: #65526E;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+header h3 a:hover {
+  color: white;
+}
+header h3::before {
+  content: "";
+  background-image: url("../../assets/RebeccaDiem_Logo (1).png");
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  background-position: center;
+  left: 75px;
+  top: -8px;
+}
+header nav {
+  width: 50%;
+}
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+}
+header nav ul .hiddenHomeButton {
+  display: none;
 }
 header nav ul li {
-  list-style: none;
-  margin: 5px 15px;
+  margin: 0;
+  letter-spacing: 1px;
 }
-header h1 {
-  text-align: center;
+header nav ul li a {
+  text-decoration: none;
+  color: #65526E;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li a:hover {
+  color: white;
 }
 
-footer p {
+.landing {
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+  height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../../assets/Rebecca-Diem-2019.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.landing h1 {
+  letter-spacing: -5px;
+  position: relative;
+  left: 18%;
+  bottom: 5%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+}
+
+.featured {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 7%;
+}
+.featured h2 {
+  text-align: center;
+  font-family: "Satisfy", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #BFABC9;
+  margin-top: 0;
+  padding-top: 0;
+}
+.featured .features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.featured .features .feature1,
+.featured .features .feature2,
+.featured .features .feature3 {
+  width: calc(33.3333333333% - 10px);
+  position: relative;
+}
+.featured .features .feature1 img,
+.featured .features .feature2 img,
+.featured .features .feature3 img {
+  max-width: 100%;
+}
+.featured .features .description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.featured .features .description h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.featured .features .description h3 a {
+  text-decoration: none;
+  color: #FFF;
+}
+.featured .features .description h3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.featured .features .description p {
+  font-family: "Rasa", serif;
+  font-size: 1.25rem;
+  width: 80%;
+}
+.featured .see-more {
+  text-align: center;
+}
+.featured .see-more h3 {
+  margin: 0;
+  padding: 0;
+}
+.featured .see-more span {
+  border: 1px solid black;
+  padding: 8px 10px;
+}
+
+.intro {
+  padding: 40px;
+}
+.intro .short-bio h2 {
+  text-align: center;
+  font-family: "Satisfy", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #BFABC9;
+}
+.intro .short-bio p {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.65;
+  letter-spacing: 1px;
+  font-family: "Rasa", serif;
+  margin-bottom: 4%;
+  font-size: 1.3rem;
+}
+.intro .short-bio p .namesake {
+  color: #BFABC9;
+  font-size: 1.8rem;
+  font-family: "Satisfy", serif;
+  letter-spacing: -1px;
+}
+
+footer {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #BFABC9;
+  font-family: "Rasa", serif;
+  text-transform: uppercase;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+footer ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 7px 0 0 0;
+}
+footer ul li {
+  font-size: 1.5rem;
+}
+footer ul li a {
+  color: #65526E;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+footer ul li a:hover {
+  color: white;
+}
+
+.writing-page h2 {
+  font-family: "Satisfy", serif;
+  font-size: 3rem;
+  color: #BFABC9;
+  text-align: center;
+  margin: 8% 0;
+}
+.writing-page h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.writing-page .books {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

@@ -1,0 +1,26 @@
+@import 'fonts';
+@import 'colors';
+
+
+.landing {
+    filter: opacity(.9);
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/Rebecca-Diem-2019.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    h1 {
+        letter-spacing: -5px;
+        position: relative;
+        left: 18%;
+        bottom: 5%;
+        font-family: $button;
+        font-size: 5.5rem;
+        // font-weight: 300;
+        text-transform: uppercase;
+    }
+}
