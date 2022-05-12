@@ -323,6 +323,9 @@ header nav ul li a {
 header nav ul li a:hover {
   color: white;
 }
+header nav ul .hide {
+  display: none;
+}
 
 .landing {
   -webkit-filter: opacity(0.9);
@@ -386,12 +389,15 @@ header nav ul li a:hover {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .featured .features .feature1,
 .featured .features .feature2,
 .featured .features .feature3 {
   width: calc(33.3333333333% - 10px);
   position: relative;
+  padding-top: 15px;
 }
 .featured .features .feature1 img,
 .featured .features .feature2 img,
@@ -633,4 +639,69 @@ footer ul li a:hover {
 }
 .writing-page .poetry {
   margin-bottom: 5%;
+}
+
+@media (max-width: 1112px) {
+  .featured .feature1,
+.featured .feature2,
+.featured .feature3 {
+    min-width: 361px;
+  }
+}
+@media (max-width: 835px) {
+  .landing h1 {
+    font-size: 4rem;
+    letter-spacing: -3px;
+  }
+}
+@media (max-width: 632px) {
+  header {
+    height: 50px;
+  }
+  header h3 {
+    width: auto;
+    padding-left: 35px;
+  }
+  header h3::before {
+    left: -30px;
+  }
+  header nav {
+    display: none;
+  }
+
+  .landing {
+    height: 90vh;
+  }
+  .landing h1 {
+    left: 0;
+  }
+
+  .intro .short-bio h2 {
+    font-size: 2rem;
+  }
+  .intro .short-bio p {
+    width: 95%;
+    font-size: 1.15rem;
+  }
+
+  .featured h2 {
+    font-size: 2rem;
+    overflow: hidden;
+  }
+  .featured .features .description h3 {
+    font-size: 1.3rem;
+  }
+  .featured .features .description p {
+    font-size: 1.15rem;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .intro .short-bio p {
+    width: 100%;
+    line-height: 1.3;
+  }
 }
