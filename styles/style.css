@@ -356,62 +356,24 @@ header nav ul .hide {
   text-transform: uppercase;
 }
 
-.featured {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-bottom: 7%;
-}
 .featured h2 {
   text-align: center;
   font-family: "Satisfy", serif;
-  font-weight: 400;
-  font-size: 3rem;
   color: #BFABC9;
-  margin-top: 0;
-  padding-top: 0;
+  font-size: 3rem;
 }
-.featured .features {
+.featured .recent-projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
-.featured .features .feature1,
-.featured .features .feature2,
-.featured .features .feature3 {
-  width: calc(33.3333333333% - 10px);
-  position: relative;
-  padding-top: 15px;
+.featured .recent-projects a {
+  text-decoration: none;
 }
-.featured .features .feature1 img,
-.featured .features .feature2 img,
-.featured .features .feature3 img {
-  max-width: 100%;
-}
-.featured .features .description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  text-align: center;
+.featured .recent-projects a .project1 {
+  height: 300px;
+  color: #FFF;
+  font-family: "Rasa", serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,39 +387,123 @@ header nav ul .hide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url("../../assets/Rebecca-Diem-featured-01-Read-The-North.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.featured .features .description h3 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.5rem;
-  margin: 0;
-  padding: 0;
+.featured .recent-projects a .project1 h3 {
+  font-size: 1.5em;
   text-transform: uppercase;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  font-family: "Barlow", sans-serif;
 }
-.featured .features .description h3 a {
-  text-decoration: none;
-  color: #FFF;
-}
-.featured .features .description h3:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-.featured .features .description p {
-  font-family: "Rasa", serif;
-  font-size: 1.25rem;
+.featured .recent-projects a .project1 p {
+  max-width: 100%;
   width: 80%;
-}
-.featured .see-more {
   text-align: center;
+  letter-spacing: 1px;
+  font-family: "Rasa", serif;
 }
-.featured .see-more h3 {
-  margin: 0;
-  padding: 0;
+.featured .recent-projects a .project1:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  z-index: 10;
+  -webkit-box-shadow: 10px 10px 8px rgba(68, 0, 107, 0.7);
+          box-shadow: 10px 10px 8px rgba(68, 0, 107, 0.7);
 }
-.featured .see-more span {
-  border: 1px solid black;
-  padding: 8px 10px;
+.featured .recent-projects a .project2 {
+  height: 300px;
+  color: #FFF;
+  font-family: "Rasa", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../../assets/Rebecca-Diem-featured-02-Write-Magazine.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+.featured .recent-projects a .project2 h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+}
+.featured .recent-projects a .project2 p {
+  max-width: 100%;
+  width: 80%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Rasa", serif;
+}
+.featured .recent-projects a .project2:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  z-index: 10;
+  -webkit-box-shadow: 10px 10px 8px rgba(68, 0, 107, 0.7), -10px -10px 12px rgba(68, 0, 107, 0.3);
+          box-shadow: 10px 10px 8px rgba(68, 0, 107, 0.7), -10px -10px 12px rgba(68, 0, 107, 0.3);
+}
+.featured .recent-projects a .project3 {
+  height: 300px;
+  color: #FFF;
+  font-family: "Rasa", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../../assets/Rebecca-Diem-featured-03-lighthouse.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.featured .recent-projects a .project3 h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+}
+.featured .recent-projects a .project3 p {
+  max-width: 100%;
+  width: 80%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Rasa", serif;
+}
+.featured .recent-projects a .project3:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  z-index: 10;
+  -webkit-box-shadow: 10px 10px 8px rgba(68, 0, 107, 0.7);
+          box-shadow: 10px 10px 8px rgba(68, 0, 107, 0.7);
 }
 
 .intro {
@@ -668,14 +714,12 @@ footer ul li a:hover {
   header nav {
     display: none;
   }
-
   .landing {
     height: 90vh;
   }
   .landing h1 {
     left: 0;
   }
-
   .intro .short-bio h2 {
     font-size: 2rem;
   }
@@ -683,7 +727,6 @@ footer ul li a:hover {
     width: 95%;
     font-size: 1.15rem;
   }
-
   .featured h2 {
     font-size: 2rem;
     overflow: hidden;
@@ -699,7 +742,6 @@ footer ul li a:hover {
   .wrapper {
     width: 95%;
   }
-
   .intro .short-bio p {
     width: 100%;
     line-height: 1.3;
