@@ -1,0 +1,45 @@
+{
+  "aboutv4": {
+    "title": "Some core information's about me",
+    "subtitle": "ABOUT",
+    "image": "assets/images/achive3.jpg",
+    "videoURL": "https://www.youtube.com/watch?v=ksImBkJNQt8",
+    "description": "Rebecca Diem writes hopeful speculative fiction and poetry. Her work can be found on Reactor and Write Magazine, and she is the author of the indie steampunk series Tales of the Captain Duke. She is currently finishing her first full-length novel and working on a postpartum poetry collection inspired by beach walks with a sleeping baby.",
+    "description2": "A specialist in communications and strategic initiatives, Rebecca is currently on leave as a director for Canada's largest free book festival, The Word On The Street Toronto. She also hosts the Read the North podcast taking listeners behind the scenes of contemporary Canadian and Indigenous literature.",
+    "description3": "With favourite writing spots on three continents, Rebecca now calls Grey-Bruce home with her Australian composer husband and newborn daughter.",
+    "userinfo": [
+      {
+        "title": "Name:",
+        "subtitle": "Rebecca Diem"
+      },
+      {
+        "title": "Born:",
+        "subtitle": "05. 16. 1992"
+      },
+      {
+        "title": "Phone:",
+        "subtitle": "+01879654585"
+      },
+      {
+        "title": "Email ID:",
+        "subtitle": "info@wonted.com"
+      },
+      {
+        "title": "Career started:",
+        "subtitle": "2015"
+      },
+      {
+        "title": "Languages:",
+        "subtitle": "English, French"
+      },
+      {
+        "title": "Country:",
+        "subtitle": "USA"
+      },
+      {
+        "title": "Address:",
+        "subtitle": "Etowah, TN 37331 United States"
+      }
+    ]
+  }
+}
