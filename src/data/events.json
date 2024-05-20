@@ -5,69 +5,27 @@
     "singleBlog": [
       {
         "id": 1,
-        "image": "assets/images/events/1.jpg",
-        "title": "Discussion On Horror Thriller",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quas volupta tibus porro quod quo blanditiis sint ipsam! Repellendus, voluptatibus soluta!",
-        "date": "23",
+        "image": "assets/images/events/2.jpg",
+        "title": "Lets Celebrate Poetry",
+        "description": "Come and listen to a discussion with Rebecca and past poet laureate Richard Yves-Sitoski",
+        "date": "6",
         "month": "JUNE",
-        "year": "2022",
+        "year": "2024",
         "btn": "Read more",
-        "location": "Juventus"
+        "location": "Owen Sound Library Autitorium",
+        "url": ""
       },
       {
         "id": 2,
-        "image": "assets/images/events/2.jpg",
-        "title": "Discussion On Horror Thriller",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quas volupta tibus porro quod quo blanditiis sint ipsam! Repellendus, voluptatibus soluta!",
-        "date": "23",
+        "image": "assets/images/rebecca/events/skidDogs.png",
+        "title": "Owen Sound Memoir Series: Emelia Symington-Fedy",
+        "description": "Join Rebecca as she hosts this discussion with Emelia about her memoir Skid Dogs.",
+        "date": "21",
         "month": "JUNE",
-        "year": "2022",
+        "year": "2024",
         "btn": "Read more",
-        "location": "Juventus"
-      },
-      {
-        "id": 3,
-        "image": "assets/images/events/3.jpg",
-        "title": "Discussion On Horror Thriller",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quas volupta tibus porro quod quo blanditiis sint ipsam! Repellendus, voluptatibus soluta!",
-        "date": "23",
-        "month": "JUNE",
-        "year": "2022",
-        "btn": "Read more",
-        "location": "Juventus"
-      },
-      {
-        "id": 4,
-        "image": "assets/images/events/4.jpg",
-        "title": "Discussion On Horror Thriller",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quas volupta tibus porro quod quo blanditiis sint ipsam! Repellendus, voluptatibus soluta!",
-        "date": "23",
-        "month": "JUNE",
-        "year": "2022",
-        "btn": "Read more",
-        "location": "Juventus"
-      },
-      {
-        "id": 5,
-        "image": "assets/images/events/5.jpg",
-        "title": "Discussion On Horror Thriller",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quas volupta tibus porro quod quo blanditiis sint ipsam! Repellendus, voluptatibus soluta!",
-        "date": "23",
-        "month": "JUNE",
-        "year": "2022",
-        "btn": "Read more",
-        "location": "Juventus"
-      },
-      {
-        "id": 6,
-        "image": "assets/images/events/6.jpg",
-        "title": "Discussion On Horror Thriller",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quas volupta tibus porro quod quo blanditiis sint ipsam! Repellendus, voluptatibus soluta!",
-        "date": "23",
-        "month": "JUNE",
-        "year": "2022",
-        "btn": "Read more",
-        "location": "Juventus"
+        "location": "Owen Sound Library Autitorium",
+        "url": "https://owensoundmemoirseries.com/events/emeliasymington-fedy/"
       }
     ]
   }

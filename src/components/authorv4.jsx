@@ -43,21 +43,6 @@ const Authorv4 = ({ isBg }) => {
             <p>{aboutv4.description3}</p>
             <div className="authorv2__content">
               <ul className="social-icon mt-5">
-                {socialLink.linkedin === "" ? (
-                  ""
-                ) : (
-                  <li>
-                    <a href={socialLink.linkedin}>
-                      <img
-                        className="img-fluid"
-                        src="assets/icons/linkedin.svg"
-                        alt="icon"
-                        width="25"
-                        height="25"
-                      />
-                    </a>
-                  </li>
-                )}
                 {socialLink.instagram === "" ? (
                   ""
                 ) : (

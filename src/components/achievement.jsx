@@ -14,8 +14,9 @@ const Achievement = ({ isBg }) => {
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span>{achievements.title}</span>
-              <h2 className="display-6">{achievements.subtitle}</h2>
+              <h2>
+                <span>{achievements.title}</span>
+              </h2>
               <div className="section-divider divider-traingle"></div>
             </div>
           </div>
@@ -29,23 +30,25 @@ const Achievement = ({ isBg }) => {
               data-aos-duration="1000"
               data-aos-delay={(i + 2) * 50}
             >
-              <div className="achievement__item h-100 translateEffect1">
-                <div className="row row-cols-2">
-                  <div className="col mt-0">
-                    <img
-                      className="img-fluid"
-                      src={data.image}
-                      alt={data.title}
-                    />
-                  </div>
-                  <div className="col mt-0">
-                    <div className="achievement__content">
-                      <h3>{data.title}</h3>
-                      <p>{data.description}</p>
+              <a href={data.url} target="_blank" rel="noreferrer">
+                <div className="achievement__item h-100 translateEffect1">
+                  <div className="row row-cols-2">
+                    <div className="col mt-0">
+                      <img
+                        className="img-fluid"
+                        src={data.image}
+                        alt={data.title}
+                      />
+                    </div>
+                    <div className="col mt-0">
+                      <div className="achievement__content">
+                        <h3>{data.title}</h3>
+                        <p>{data.description}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           ))}
         </div>

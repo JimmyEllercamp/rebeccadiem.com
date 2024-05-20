@@ -8,9 +8,33 @@ import { MdCall, MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 import data from "../data/contact.json";
 import { contactFormAction, contactMap } from "../global";
+import { useState, useEffect } from 'react';
 
 const Contactv2 = ({ isBg }) => {
   const { contact } = data;
+
+  const initialFormData = {
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { name, email, subject, message } = formData;
+    const mailtoLink = `mailto:${contact.emailText}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+    window.location.href = mailtoLink;
+    setFormData(initialFormData);
+  };
+
   return (
     // <!-- ========== Contact section start ========== -->
     <section
@@ -21,8 +45,9 @@ const Contactv2 = ({ isBg }) => {
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span>{contact.subtitle}</span>
-              <h2 className="display-6">{contact.title}</h2>
+              <h2>
+                <span>{contact.subtitle}</span>
+              </h2>
               <div className="section-divider divider-traingle"></div>
             </div>
           </div>
@@ -36,11 +61,7 @@ const Contactv2 = ({ isBg }) => {
             data-aos-delay="200"
           >
             <div className="contact-form-box">
-              <form
-                id="contact-form"
-                method="post"
-                action={contactFormAction.link}
-              >
+              <form id="contact-form" onSubmit={handleSubmit}>
                 <div className="message col">
                   <p className="email-loading alert alert-warning">
                     <img src="assets/images/loading.gif" alt="" />
@@ -62,6 +83,8 @@ const Contactv2 = ({ isBg }) => {
                     id="contact-name"
                     type="text"
                     placeholder="Your Name"
+                    value={formData.name}
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -72,6 +95,8 @@ const Contactv2 = ({ isBg }) => {
                     id="contact-email"
                     type="email"
                     placeholder="Your Email"
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -82,6 +107,8 @@ const Contactv2 = ({ isBg }) => {
                     id="contact-subject"
                     type="text"
                     placeholder="Subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                     required
                   />
                 </div>
@@ -91,6 +118,8 @@ const Contactv2 = ({ isBg }) => {
                     className="contact-message"
                     id="contact-message"
                     placeholder="Your Message"
+                    value={formData.message}
+                    onChange={handleChange}
                     required
                   ></textarea>
                 </div>
@@ -104,33 +133,6 @@ const Contactv2 = ({ isBg }) => {
             </div>
           </div>
           {/* <!--  contact form area end --> */}
-          {/* <!-- contact information start --> */}
-          <div
-            className="col-lg-4 col-md-6 col-sm-12 m-25px-b"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            <div className="contact__address contactv4">
-              <div id="map">
-                <iframe src={contactMap.link}></iframe>
-              </div>
-              <ul className="contactv4__content">
-                <li>
-                  <FaMapMarkerAlt /> {contact.addressText2}
-                </li>
-                <li>
-                  <MdEmail />
-                  <Link to="/#">{contact.emailText}</Link>
-                </li>
-                <li>
-                  <MdCall />
-                  <a href="tel:1124447900">{contact.number}</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          {/* <!-- contact information end --> */}
         </div>
       </div>
     </section>
