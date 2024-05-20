@@ -24,10 +24,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "preinstall": "npm config set registry https://registry.npmjs.org/",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -48,5 +50,8 @@
   },
   "devDependencies": {
     "web-vitals": "^2.1.4"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
