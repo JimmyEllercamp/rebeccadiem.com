@@ -25,7 +25,9 @@
   "scripts": {
     "start": "react-scripts start",
     "preinstall": "npm config set registry https://registry.npmjs.org/",
-    "build": "react-scripts build",
+    "prebuild": "mv .npmrc .npmrc_backup || true",
+    "postbuild": "mv .npmrc_backup .npmrc || true",
+    "build": "npm run prebuild && react-scripts build && npm run postbuild",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
