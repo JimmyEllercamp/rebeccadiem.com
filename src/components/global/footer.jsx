@@ -10,7 +10,7 @@ const Footer = ({ menu, isBg }) => {
 
   return (
     <>
-      <CtaV3 />
+      {/* <CtaV3 /> */}
       <footer
         className={`footer overflow-hidden ${isBg === "yes" ? "bg-one" : ""}`}
       >
@@ -44,103 +44,6 @@ const Footer = ({ menu, isBg }) => {
                     </li>
                   ))}
                 </ul>
-              </div>
-              <div className="col-lg-3 d-flex justify-content-center align-items-center mb-3 mb-lg-0 justify-content-lg-end">
-                <ul className="social-icon">
-                  {socialLink.facebook === "" ? (
-                    ""
-                  ) : (
-                    <li>
-                      <a href={socialLink.facebook}>
-                        <img
-                          className="img-fluid"
-                          src="assets/icons/facebook.svg"
-                          alt="icon"
-                          width="25"
-                          height="25"
-                        />
-                      </a>
-                    </li>
-                  )}
-                  {socialLink.twitter === "" ? (
-                    ""
-                  ) : (
-                    <li>
-                      <a href={socialLink.twitter}>
-                        <img
-                          className="img-fluid"
-                          src="assets/icons/twitter.svg"
-                          alt="icon"
-                          width="25"
-                          height="25"
-                        />
-                      </a>
-                    </li>
-                  )}
-                  {socialLink.linkedin === "" ? (
-                    ""
-                  ) : (
-                    <li>
-                      <a href={socialLink.linkedin}>
-                        <img
-                          className="img-fluid"
-                          src="assets/icons/linkedin.svg"
-                          alt="icon"
-                          width="25"
-                          height="25"
-                        />
-                      </a>
-                    </li>
-                  )}
-                  {socialLink.youtube === "" ? (
-                    ""
-                  ) : (
-                    <li>
-                      <a href={socialLink.youtube}>
-                        <img
-                          className="img-fluid"
-                          src="assets/icons/youtube-play.svg"
-                          alt="icon"
-                          width="25"
-                          height="25"
-                        />
-                      </a>
-                    </li>
-                  )}
-                  {socialLink.whatsapp === "" ? (
-                    ""
-                  ) : (
-                    <li>
-                      <a href={socialLink.whatsapp}>
-                        <img
-                          className="img-fluid"
-                          src="assets/icons/whatsapp.svg"
-                          alt="icon"
-                          width="25"
-                          height="25"
-                        />
-                      </a>
-                    </li>
-                  )}
-                </ul>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div className="footer__copyright m-20px-t m-20px-b">
-            <div className="row">
-              <div className="col-12">
-                <p className="m-0 text-center">
-                  &copy; {footer.copyright}
-                  <img
-                    className="img-fluid"
-                    src={footer.icon}
-                    alt="footer icon"
-                    width="20"
-                    height="20"
-                  />
-                  by <a href="#">{footer.name}</a>
-                </p>
               </div>
             </div>
           </div>

@@ -13,8 +13,9 @@ const Eventv2 = ({ isBg }) => {
         <div className="row">
           <div className="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
             <div className="section-title-center text-center">
-              <span>{events.title}</span>
-              <h2 className="display-6">{events.subtitle}</h2>
+              <h2>
+                <span>{events.title}</span>
+              </h2>
               <div className="section-divider divider-traingle"></div>
             </div>
           </div>
@@ -38,10 +39,10 @@ const Eventv2 = ({ isBg }) => {
                   <h4 className="mb-3">{data.title}</h4>
                   <p>{data.description}</p>
                 </div>
-                <Link to="/single-event" className="link">
+                <a href={data.url} target="_blank" rel="noreferrer">
                   {data.btn}
                   <i className="icofont-rounded-right"></i>
-                </Link>
+                </a>
               </div>
             </div>
           ))}

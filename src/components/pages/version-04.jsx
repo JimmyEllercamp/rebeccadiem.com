@@ -24,14 +24,14 @@ const Version04 = ({headerv2, footer}) => {
       <Authorv4 isBg=""/>
       <Booksv2 isBg="yes"/>
       <Achievement isBg="yes"/>
-      <Ctav5 isBg=""/>
+      {/* <Ctav5 isBg=""/> */}
       <Eventv2 isBg="yes"/>
-      <Booksv3 isBg=""/>
-      <Testimonial isBg="yes"/>
-      <Blog isBg=""/>
-      <Ctav4 isBg=""/>
+      {/* <Booksv3 isBg=""/> */}
+      {/* <Testimonial isBg="yes"/> */}
+      {/* <Blog isBg=""/> */}
+      {/* <Ctav4 isBg=""/> */}
       <Contactv2 isBg=""/>
-      <Cta isBg="yes"/>
+      {/* <Cta isBg="yes"/> */}
       <Footer isBg="yes" menu={menuv2} />
     </>
   );

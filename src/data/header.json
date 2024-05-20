@@ -114,13 +114,13 @@
       },
       {
         "link": "achievement",
-        "title": "Achievement",
+        "title": "Works",
         "isDropdown": false
       },
       {
         "link": "events",
         "title": "Events",
-        "isDropdown": true,
+        "isDropdown": false,
         "dropdownItem": [
           {
             "link": "/all-event",
@@ -131,11 +131,6 @@
             "title": "Single Event"
           }
         ]
-      },
-      {
-        "link": "testimonial",
-        "title": "Testimonial",
-        "isDropdown": false
       },
       {
         "link": "blog",
