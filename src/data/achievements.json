@@ -1,93 +1,100 @@
 {
-  "achievements": {
-    "title": "Other Works",
-    "subtitle": "Honor & Awards Achieved",
-    "icon": "/assets/icons/award.svg",
-    "awards": [
-      {
-        "id": 1,
-        "title": "Radio",
-        "image": "/assets/images/rebecca/achievements/cbc.png",
-        "description": "An interview and the first public reading of “The Dunes” on CBC Ontario Morning",
-        "url": "https://www.cbc.ca/listen/live-radio/1-112-ontario-morning/clip/16049265-owen-sound-poet-laureate"
-      },
-      {
-        "id": 2,
-        "title": "Interview",
-        "image": "/assets/images/rebecca/achievements/osCurrent.png",
-        "description": "An exclusive Q&A for subscribers of The Owen Sound Current",
-        "url": "https://www.owensoundcurrent.com/p/meet-rebecca-diem-poet-laureate?r=151ae&utm_campaign=post&utm_medium=web"
-      },
-      {
-        "id": 3,
-        "title": "Announcement",
-        "image": "/assets/images/rebecca/achievements/osPoetLaureate.png",
-        "description": "Appointed as the Owen Sound Poet Laureate for 2024-2025",
-        "url": "https://www.osngupl.ca/wp-content/uploads/2024/03/24-03-Media-Release-Poet-Laureate.pdf "
-      },
-      {
-        "id": 4,
-        "title": "Podcast",
-        "image": "/assets/images/rebecca/achievements/rtnPodcast.png",
-        "description": "Go behind the scenes of CanLit with Rebecca Diem on the Read The North podcast",
-        "url": "https://rss.com/podcasts/read-the-north/"
-      },
-      {
-        "id": 5,
-        "title": "Article",
-        "image": "/assets/images/rebecca/achievements/writeMagazine.png",
-        "description": "A Tale of Resilience for Write Magazine, Spring 2021",
-        "url": "https://www.writersunion.ca/sites/all/files/WRITE-Spring2021-Teaser.pdf"
-      },
-      {
-        "id": 6,
-        "title": "Video",
-        "image": "/assets/images/rebecca/achievements/lighthouse.png",
-        "description": "Watch the Lighthouse video collaboration, part of the CBC Digital Originals initiative",
-        "url": "https://www.youtube.com/watch?v=BIFU0q-EHX4"
-      },
-      {
-        "id": 7,
-        "title": "Article",
-        "image": "/assets/images/rebecca/achievements/reactorHopepunk.png",
-        "description": "Hopepunk and the New Science of Stress for Reactor Magazine",
-        "url": "https://reactormag.com/hopepunk-and-the-new-science-of-stress/"
-      },
-      {
-        "id": 8,
-        "title": "Poetry",
-        "image": "/assets/images/rebecca/achievements/galPals.png",
-        "description": "Performance of “BFF: Bosom Friends Forever” at the Gal Pals zine launch party",
-        "url": ""
-      },
-      {
-        "id": 9,
-        "title": "Article",
-        "image": "/assets/images/rebecca/achievements/reactorNovellas.png",
-        "description": " Long Live Short Fiction for Reactor Magazine",
-        "url": "https://reactormag.com/long-live-short-fiction-the-new-golden-age-of-the-sff-novella/"
-      },
-      {
-        "id": 10,
-        "title": "Appearance",
-        "image": "/assets/images/rebecca/achievements/fanExpo.png",
-        "description": "Celebrating the completed Tales of the Captain Duke series at Fan Expo Canada",
-        "url": ""
-      },
-      {
-        "id": 11,
-        "title": "Article",
-        "image": "/assets/images/rebecca/achievements/reactorMcIntyre.png",
-        "description": "A deep dive into Vonda N. McIntyre’s Superluminal for Reactor Magazine",
-        "url": "https://reactormag.com/the-1983-book-ian-mcewan-and-everyone-else-who-craves-thoughtful-scifi-should-be-reading/"
-      },
-      {
-        "id": 12,
-        "title": "Article",
-        "image": "/assets/images/rebecca/achievements/koboWritingLife.png",
-        "description": "My author origin story for Kobo Writing Life",
-        "url": "https://kobowritinglife.com/2018/07/09/where-did-your-writing-journey-begin/"
-      }
-    ]
-  }
+    "achievements": {
+        "title": "Other Works",
+        "subtitle": "Honor & Awards Achieved",
+        "icon": "/assets/icons/award.svg",
+        "awards": [
+            {
+                "id": 1,
+                "title": "Podcast",
+                "image": "/assets/images/rebecca/achievements/laurenBestPodcast.png",
+                "description": "An interview with Lauren Best on creativity, parenthood, and the poetry of our daily lives",
+                "url": "https://laurenbest.substack.com/p/rebecca-diem-on-trusting-creativity/"
+            },
+            {
+                "id": 2,
+                "title": "Radio",
+                "image": "/assets/images/rebecca/achievements/cbc.png",
+                "description": "An interview and the first public reading of “The Dunes” on CBC Ontario Morning",
+                "url": "https://www.cbc.ca/listen/live-radio/1-112-ontario-morning/clip/16049265-owen-sound-poet-laureate"
+            },
+            {
+                "id": 3,
+                "title": "Interview",
+                "image": "/assets/images/rebecca/achievements/osCurrent.png",
+                "description": "An exclusive Q&A for subscribers of The Owen Sound Current",
+                "url": "https://www.owensoundcurrent.com/p/meet-rebecca-diem-poet-laureate?r=151ae&utm_campaign=post&utm_medium=web"
+            },
+            {
+                "id": 4,
+                "title": "Announcement",
+                "image": "/assets/images/rebecca/achievements/osPoetLaureate.png",
+                "description": "Appointed as the Owen Sound Poet Laureate for 2024-2025",
+                "url": "https://www.osngupl.ca/wp-content/uploads/2024/03/24-03-Media-Release-Poet-Laureate.pdf "
+            },
+            {
+                "id": 5,
+                "title": "Podcast",
+                "image": "/assets/images/rebecca/achievements/rtnPodcast.png",
+                "description": "Go behind the scenes of CanLit with Rebecca Diem on the Read The North podcast",
+                "url": "https://rss.com/podcasts/read-the-north/"
+            },
+            {
+                "id": 6,
+                "title": "Article",
+                "image": "/assets/images/rebecca/achievements/writeMagazine.png",
+                "description": "A Tale of Resilience for Write Magazine, Spring 2021",
+                "url": "https://www.writersunion.ca/sites/all/files/WRITE-Spring2021-Teaser.pdf"
+            },
+            {
+                "id": 7,
+                "title": "Video",
+                "image": "/assets/images/rebecca/achievements/lighthouse.png",
+                "description": "Watch the Lighthouse video collaboration, part of the CBC Digital Originals initiative",
+                "url": "https://www.youtube.com/watch?v=BIFU0q-EHX4"
+            },
+            {
+                "id": 8,
+                "title": "Article",
+                "image": "/assets/images/rebecca/achievements/reactorHopepunk.png",
+                "description": "Hopepunk and the New Science of Stress for Reactor Magazine",
+                "url": "https://reactormag.com/hopepunk-and-the-new-science-of-stress/"
+            },
+            {
+                "id": 9,
+                "title": "Poetry",
+                "image": "/assets/images/rebecca/achievements/galPals.png",
+                "description": "Performance of “BFF: Bosom Friends Forever” at the Gal Pals zine launch party",
+                "url": ""
+            },
+            {
+                "id": 10,
+                "title": "Article",
+                "image": "/assets/images/rebecca/achievements/reactorNovellas.png",
+                "description": " Long Live Short Fiction for Reactor Magazine",
+                "url": "https://reactormag.com/long-live-short-fiction-the-new-golden-age-of-the-sff-novella/"
+            },
+            {
+                "id": 11,
+                "title": "Appearance",
+                "image": "/assets/images/rebecca/achievements/fanExpo.png",
+                "description": "Celebrating the completed Tales of the Captain Duke series at Fan Expo Canada",
+                "url": ""
+            },
+            {
+                "id": 12,
+                "title": "Article",
+                "image": "/assets/images/rebecca/achievements/reactorMcIntyre.png",
+                "description": "A deep dive into Vonda N. McIntyre’s Superluminal for Reactor Magazine",
+                "url": "https://reactormag.com/the-1983-book-ian-mcewan-and-everyone-else-who-craves-thoughtful-scifi-should-be-reading/"
+            },
+            {
+                "id": 13,
+                "title": "Article",
+                "image": "/assets/images/rebecca/achievements/koboWritingLife.png",
+                "description": "My author origin story for Kobo Writing Life",
+                "url": "https://kobowritinglife.com/2018/07/09/where-did-your-writing-journey-begin/"
+            }
+        ]
+    }
 }

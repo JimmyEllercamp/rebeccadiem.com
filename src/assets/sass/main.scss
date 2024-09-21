@@ -1,10 +1,8 @@
 @import "./abstracts/mixins";
 @import "./abstracts/animations";
 @import "./abstracts/variables";
-
 @import "./base/typography";
 @import "./base/base";
-
 @import "./components/header";
 @import "./components/hero";
 @import "./components/achive";
@@ -22,7 +20,6 @@
 @import "./components/achievement";
 @import "./components/events";
 @import "./components/footer";
-
 @import "./pages/all-blogs";
 @import "./pages/blog-right-sidebar";
 @import "./pages/single-blog";

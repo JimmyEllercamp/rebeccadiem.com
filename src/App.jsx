@@ -20,56 +20,80 @@ import footerData from "./data/footer.json";
 import headerData from "./data/header.json";
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
-  return null;
+    return null;
 }
 function App() {
-  const { header, headerv2, headerv3 } = headerData;
-  const { footer } = footerData;
+    const { header, headerv2, headerv3 } = headerData;
+    const { footer } = footerData;
 
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-  }, []);
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
-  useEffect(() => {
-    console.log('**** Header **** : ', header);
-  }, [header])
-
-
-  return (
-    <div className="section-wrapper">
-      <div id="preLoader"></div>
-      <BrowserRouter>
-        <ScrollToTop/>
-        <Routes>
-          <Route path="/" element={<Version04 headerv2={headerv2} footer={footer} />} />
-          <Route
-            path="single-blog"
-            element={<SingleBlog headerv3={headerv3} footer={footer} />}
-          />
-          <Route path="all-blog" element={<AllBlog headerv3={headerv3} footer={footer} />} />
-          <Route
-            path="single-event"
-            element={<SingleEvent headerv3={headerv3} footer={footer} />}
-          />
-          <Route path="all-event" element={<AllEvent headerv3={headerv3} footer={footer} />} />
-          <Route
-            path="blog-right-sidebar"
-            element={<BlogRightSidebar headerv3={headerv3} footer={footer} />}
-          />
-          <Route
-            path="blog-left-sidebar"
-            element={<BlogLeftSidebar headerv3={headerv3} footer={footer} />}
-          />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+    return (
+        <div className="section-wrapper">
+            <div id="preLoader"></div>
+            <BrowserRouter>
+                <ScrollToTop />
+                <Routes>
+                    <Route
+                        path="/"
+                        element={
+                            <Version04 headerv2={headerv2} footer={footer} />
+                        }
+                    />
+                    <Route
+                        path="single-blog"
+                        element={
+                            <SingleBlog headerv3={headerv3} footer={footer} />
+                        }
+                    />
+                    <Route
+                        path="all-blog"
+                        element={
+                            <AllBlog headerv3={headerv3} footer={footer} />
+                        }
+                    />
+                    <Route
+                        path="single-event"
+                        element={
+                            <SingleEvent headerv3={headerv3} footer={footer} />
+                        }
+                    />
+                    <Route
+                        path="all-event"
+                        element={
+                            <AllEvent headerv3={headerv3} footer={footer} />
+                        }
+                    />
+                    <Route
+                        path="blog-right-sidebar"
+                        element={
+                            <BlogRightSidebar
+                                headerv3={headerv3}
+                                footer={footer}
+                            />
+                        }
+                    />
+                    <Route
+                        path="blog-left-sidebar"
+                        element={
+                            <BlogLeftSidebar
+                                headerv3={headerv3}
+                                footer={footer}
+                            />
+                        }
+                    />
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
