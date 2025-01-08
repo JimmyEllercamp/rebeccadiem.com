@@ -5,39 +5,15 @@
         "singleBlog": [
             {
                 "id": 1,
-                "image": "assets/images/events/2.jpg",
-                "title": "Connections Poetry Workshop",
-                "description": "A free 90min workshop on creating and community hosted by the Owen Sound and North Grey Union Public Library for Ontario Culture Days! 6:30 - 8:00 PM. Limited space! Register by emailing info@library.osngupl.ca",
-                "date": "3",
-                "month": "OCT",
-                "year": "2024",
+                "image": "assets/images/rebecca/events/publicService.png",
+                "title": "An Afternoon With 'The Public Service' OnTourio",
+                "description": "Come gather at Heartwood Hall for an ALL AGES afternoon of stories, dancing and singin’ with Nova Scotia’s indie-folk rockers The Public Service and special guest, OS Poet Laureate Rebecca Diem.",
+                "date": "26",
+                "month": "JAN",
+                "year": "2025",
                 "btn": "Read more",
-                "location": "Owen Sound And North Gray Union Public Library",
-                "url": "https://www.osngupl.ca/news-programs/programs/"
-            },
-            {
-                "id": 2,
-                "image": "assets/images/rebecca/events/skidDogs.png",
-                "title": "OSNGUPL Local Author Book Fair",
-                "description": "A two-day celebration of local authors taking place throughout Owen Sound's historic library building.",
-                "date": "18-19",
-                "month": "OCT",
-                "year": "2024",
-                "btn": "Read more",
-                "location": "Owen Sound And North Gray Union Public Library",
-                "url": "https://www.osngupl.ca/osngupl-local-author-book-fair/"
-            },
-            {
-                "id": 3,
-                "image": "assets/images/rebecca/events/skidDogs.png",
-                "title": "Can*Con 2024",
-                "description": "Ottawa's periodic science fiction and fantasy convention. Featuring panels, workshops, and professional development opportunities for authors.",
-                "date": "1-3",
-                "month": "NOV",
-                "year": "2024",
-                "btn": "Read more",
-                "location": "Owen Sound And North Gray Union Public Library",
-                "url": "https://can-con.org/"
+                "location": "Heartwood Hall, Owen Sound",
+                "url": "https://heartwoodhall.ca/events/the-public-service-ontourio/"
             }
         ]
     }
