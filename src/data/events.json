@@ -5,15 +5,15 @@
         "singleBlog": [
             {
                 "id": 1,
-                "image": "assets/images/rebecca/events/publicService.png",
-                "title": "An Afternoon With 'The Public Service' OnTourio",
-                "description": "Come gather at Heartwood Hall for an ALL AGES afternoon of stories, dancing and singin’ with Nova Scotia’s indie-folk rockers The Public Service and special guest, OS Poet Laureate Rebecca Diem.",
-                "date": "26",
-                "month": "JAN",
+                "image": "assets/images/rebecca/04. Read The North Podcast.png",
+                "title": "Summerfolk 50",
+                "description": "Join us for the 50th anniversary of the Summerfolk Music Festival, celebrating music, arts, and community, with a special performance by Rebecca Diem. Performance schedule TBD.",
+                "date": "15th-17th",
+                "month": "AUG",
                 "year": "2025",
                 "btn": "Read more",
-                "location": "Heartwood Hall, Owen Sound",
-                "url": "https://heartwoodhall.ca/events/the-public-service-ontourio/"
+                "location": "Kelso Beach at Nawash Park, Owen Sound",
+                "url": "https://summerfolk.org"
             }
         ]
     }
