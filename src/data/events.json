@@ -5,15 +5,39 @@
         "singleBlog": [
             {
                 "id": 1,
-                "image": "assets/images/rebecca/04. Read The North Podcast.png",
-                "title": "Summerfolk 50",
-                "description": "Join us for the 50th anniversary of the Summerfolk Music Festival, celebrating music, arts, and community, with a special performance by Rebecca Diem. Performance schedule TBD.",
-                "date": "15th-17th",
-                "month": "AUG",
+                "image": "assets/images/rebecca/events/HearTheRiver.jpeg",
+                "title": "Hear the River Poetry Event",
+                "description": "An afternoon of readings at the Durham Art Gallery featuring four powerful voices: Catherine Graham, Frances Boyle, Murgatroyd Monaghan, and Laurie Koensgen. Hosted by Rebecca Diem.",
+                "date": "18th",
+                "month": "OCT",
                 "year": "2025",
                 "btn": "Read more",
-                "location": "Kelso Beach at Nawash Park, Owen Sound",
-                "url": "https://summerfolk.org"
+                "location": "Durham Art Gallery | Durham, ON | $10",
+                "url": "https://www.durhamartgallery.com/heartheriver"
+            },
+            {
+                "id": 2,
+                "image": "assets/images/rebecca/events/BookFair.jpg",
+                "title": "Local Author Book Fair",
+                "description": "Visit the Owen Sound & North Grey Union Public Library for a multi-genre showcase taking over the entire library! Meet local authors, get your books signed, win prizes, and celebrate reading.",
+                "date": "24-25",
+                "month": "OCT",
+                "year": "2025",
+                "btn": "Read more",
+                "location": "OSNGUPL | Owen Sound, ON | Free",
+                "url": "https://osngupl.ca/osngupl-local-author-book-fair/"
+            },
+            {
+                "id": 3,
+                "image": "assets/images/rebecca/events/LaureateRevue.png",
+                "title": "The Poet Laureate's Community Revue",
+                "description": "Immerse yourself in a world of poetry and art featuring Owen Sound Poet Laureate Rebecca Diem & friends! This weekend-long event showcases the power of creative collaboration with a multi-arts exhibit and an exclusive matinee performance. Get ready to be inspired!",
+                "date": "22-23",
+                "month": "NOV",
+                "year": "2025",
+                "btn": "Read more",
+                "location": "Harmony Centre | Owen Sound, ON | Free",
+                "url": "https://www.eventbrite.ca/e/the-poet-laureates-community-revue-tickets-1758388480279?aff=rebeccadiem"
             }
         ]
     }
